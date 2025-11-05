@@ -8,6 +8,6 @@ dbt_training_nov2025:
       schema: BRONZE_AIRBNB
       threads: 54
       type: snowflake
-      user: dbt
+      user: dbttest
       warehouse: COMPUTE_WH
   target: dev
