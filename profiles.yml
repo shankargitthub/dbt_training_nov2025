@@ -4,10 +4,10 @@ dbt_training_nov2025:
       account: usmerhj-wg27681
       database: DEV
       password: dbtPassword123
-      role: TRANSFORM1
+      role: TRANSFORM
       schema: BRONZE_AIRBNB
-      threads: 54
+      threads: 4
       type: snowflake
-      user: dbttest
+      user: dbt
       warehouse: COMPUTE_WH
   target: dev
