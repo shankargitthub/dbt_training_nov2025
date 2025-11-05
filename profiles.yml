@@ -6,7 +6,7 @@ dbt_training_nov2025:
       password: dbtPassword123
       role: TRANSFORM
       schema: BRONZE_AIRBNB
-      threads: 4
+      threads: 5
       type: snowflake
       user: dbt
       warehouse: COMPUTE_WH
