@@ -10,4 +10,14 @@ dbt_training_nov2025:
       type: snowflake
       user: dbt
       warehouse: COMPUTE_WH
+    uat:
+      account: usmerhj-wg27681
+      database: uat
+      password: dbtPassword123
+      role: TRANSFORM
+      schema: BRONZE_AIRBNB
+      threads: 4
+      type: snowflake
+      user: dbt
+      warehouse: COMPUTE_WH
   target: dev
