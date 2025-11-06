@@ -15,3 +15,4 @@ models:
   dbt_training_nov2025:
     silver_airbnb:
       +schema: 'silver_airbnb'
+      +materialized: table
