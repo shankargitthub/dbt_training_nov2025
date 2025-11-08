@@ -4,4 +4,5 @@ SELECT
     is_superhost,
     created_at,
     updated_at
-FROM DEV.silver_airbnb.silver_hosts
+FROM {{ref('silver_hosts')}} --pass reference name
+--DEV.silver_airbnb.silver_hosts

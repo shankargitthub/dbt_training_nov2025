@@ -1,3 +1,4 @@
+
 SELECT 
   listing_id,
   listing_name,
@@ -8,4 +9,5 @@ SELECT
   created_at,
   updated_at
 FROM
-  DEV.silver_airbnb.silver_listings
+  {{ref('silver_listings')}}
+  --DEV.silver_airbnb.silver_listings
