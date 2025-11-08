@@ -11,8 +11,20 @@ profile: 'dbt_training_nov2025'
 
 model-paths: ["models"]
 
+clean-targets:
+  - "target"
+
 models:
   dbt_training_nov2025:
     silver_airbnb:
       +schema: 'silver_airbnb'
+      +materialized: view
+      #+materialized: dynamic_table
+      #+target_lag: downstream
+      #+snowflake_warehouse: COMPUTE_WH
+      #+transient: false
+      #+enable_iceberg_materialization: True
+    gold_airbnb:
+      +schema: 'gold_airbnb'
       +materialized: table
+      
