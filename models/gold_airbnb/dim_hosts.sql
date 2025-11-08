@@ -1,4 +1,4 @@
-{{config(materialize = 'ephemeral')}}
+--{{config(materialize = 'ephemeral')}}
 SELECT
     host_id,
     NVL(host_name, 'Anonymous') as host_name,
