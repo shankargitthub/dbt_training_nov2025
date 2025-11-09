@@ -5,8 +5,8 @@
         schema = 'snapshots',
         database = 'dev',
         unique_key = 'listing_id',
-        strategy = 'timestamp',   
-        updated_at = 'updated_at',
+        strategy = 'check',   
+        check_cols = ['listing_url','room_type','minimum_nights','price_str'],
         dbt_valid_to_current = "to_date('9999-12-31')",
         invalidate_hard_deletes = True
     )
