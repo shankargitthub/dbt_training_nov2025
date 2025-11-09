@@ -5,8 +5,9 @@
         schema = 'snapshots',
         database = 'dev',
         unique_key = 'listing_id',
-        strategy = 'check', 
-        check_cols = ['listing_url','room_type','minimum_nights','price_str']
+        strategy = 'timestamp',   
+        updated_at = 'updated_at',
+        invalidate_hard_deletes = True
     )
 }}
 
